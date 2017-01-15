@@ -25,6 +25,7 @@
     "require": {
         "symfony/symfony": "~3.0",
         "symfony/polyfill": ">=1.0",
+        "symfony/assetic-bundle": "^2.8",
         "guzzlehttp/guzzle": "~6.0"
     },
     "autoload": {
