@@ -1,0 +1,41 @@
+{
+  "name": "flosch-proxy-bundle-app",
+  "version": "1.0.0",
+  "description": "FloschProxyBundle project front-end dependencies",
+  "private": true,
+  "scripts": {
+    "compile": "gulp build",
+    "build": "npm run compile",
+    "postinstall": "npm run build",
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Florent Schildknecht <contact@florentschildknecht.com>",
+  "contributors": [
+    {
+      "name": "Florent Schildknecht"
+    }
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-debug": "^3.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.7",
+    "pump": "^1.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "open-color": "^1.4.0",
+    "tether": "^1.4.0"
+  }
+}

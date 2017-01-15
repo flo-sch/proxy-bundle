@@ -1,0 +1,91 @@
+@import 'variables';
+
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    body {
+        width: 100%;
+        height: 100%;
+        #main {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: $body-background;
+            #login {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                min-width: 420px;
+                padding: 2em 4em;
+                margin: 0;
+                text-align: center;
+                font-weight: 100;
+                background: $login-background;
+                color: $login-color;
+                border: 1px solid $brand-info;
+                .alert {
+                    padding: 1em;
+                    text-align: left;
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+                h1 {
+                    font-weight: inherit;
+                }
+                form {
+                    label {
+                        color: $login-color;
+                    }
+                    .form-group {
+                        .form-control {
+                            background: transparent;
+                            border: none;
+                            border-bottom: 1px solid $accent-color;
+                            font-size: 14px;
+                            font-weight: inherit;
+                            letter-spacing: 0.1em;
+                            &::-webkit-input-placeholder {
+                                font-weight: inherit;
+                                color: $accent-color;
+                            }
+                            &:-moz-placeholder {
+                                font-weight: inherit;
+                                color: $accent-color;
+                            }
+                            &::-moz-placeholder {
+                                font-weight: inherit;
+                                color: $accent-color;
+                            }
+                            &:-ms-input-placeholder {
+                                font-weight: inherit;
+                                color: $accent-color;
+                            }
+                        }
+                        .input-group {
+                            border-bottom: 1px solid $accent-color;
+                            .input-group-addon,
+                            .input-group-btn {
+                                background: transparent;
+                                border: none;
+                            }
+                            .form-control {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            #main {
+                #login {
+                    padding: 1em 2em;
+                    min-width: 300px;
+                }
+            }
+        }
+    }
+}

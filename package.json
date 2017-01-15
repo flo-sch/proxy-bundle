@@ -1,0 +1,18 @@
+{
+  "name": "flosch-proxy-bundle",
+  "version": "1.0.0",
+  "description": "FloschProxyBundle project front-end compilation tasks",
+  "private": true,
+  "scripts": {
+    "install": "cd Resources/public && npm install",
+    "compile": "cd Resources/public && gulp build",
+    "build": "npm run compile",
+    "postinstall": "npm run build",
+    "watch": "cd Resources/public && gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Florent Schildknecht <contact@florentschildknecht.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {},
+  "dependencies": {}
+}

@@ -1,0 +1,36 @@
+{
+    "name": "flosch/proxy-bundle",
+    "type": "symfony-bundle",
+    "description": "Authenticated symfony3 bundle: Authentication layer on top of a PHP proxy.",
+    "keywords": [
+        "bundle",
+        "proxy",
+        "symfony",
+        "rest",
+        "curl",
+        "client",
+        "authentication",
+        "security",
+        "HTTP client"
+    ],
+    "homepage": "https://github.com/flo-sch/FloschProxyBundle",
+    "license":  "MIT",
+    "authors": [
+        {
+            "name":     "Florent Schildknecht",
+            "email":    "florent.schildknecht@gmail.com",
+            "homepage": "http://floschild.me"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "~3.0",
+        "symfony/polyfill": ">=1.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flosch\\Bundle\\ProxyBundle\\": ""
+        }
+    },
+    "minimum-stability": "stable"
+}

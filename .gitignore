@@ -1,0 +1,9 @@
+# Composer and dependencies
+vendor/
+composer.lock
+
+# PHPUnit test suite
+phpunit.xml
+
+# OS X files
+*.DS_Store

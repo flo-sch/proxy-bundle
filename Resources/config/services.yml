@@ -1,0 +1,8 @@
+parameters:
+    flosch_proxy.provider.yaml_user_provider.class: Flosch\Bundle\ProxyBundle\Provider\YamlUserProvider
+
+services:
+    flosch_proxy.provider.yaml_user_provider:
+        class: "%flosch_proxy.provider.yaml_user_provider.class%"
+        arguments: ["%users_provider_file_path%"]
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>{{ proxy_title }}</title>
+        {% block stylesheets %}
+            {% stylesheets
+                '@FloschProxyBundle/Resources/public/css/vendor.min.css'
+                output='css/app.min.css' %}
+                <link rel='stylesheet' href='{{ asset_url }}'>
+            {% endstylesheets %}
+        {% endblock %}
+        <link rel='apple-touch-icon' sizes='57x57' href='{{ asset('apple-touch-icon-57x57.png') }}'>
+        <link rel='apple-touch-icon' sizes='60x60' href='{{ asset('apple-touch-icon-60x60.png') }}'>
+        <link rel='apple-touch-icon' sizes='72x72' href='{{ asset('apple-touch-icon-72x72.png') }}'>
+        <link rel='apple-touch-icon' sizes='76x76' href='{{ asset('apple-touch-icon-76x76.png') }}'>
+        <link rel='apple-touch-icon' sizes='114x114' href='{{ asset('apple-touch-icon-114x114.png') }}'>
+        <link rel='apple-touch-icon' sizes='120x120' href='{{ asset('apple-touch-icon-120x120.png') }}'>
+        <link rel='apple-touch-icon' sizes='144x144' href='{{ asset('apple-touch-icon-144x144.png') }}'>
+        <link rel='apple-touch-icon' sizes='152x152' href='{{ asset('apple-touch-icon-152x152.png') }}'>
+        <link rel='apple-touch-icon' sizes='180x180' href='{{ asset('apple-touch-icon-180x180.png') }}'>
+        <link rel='icon' href='{{ asset('favicon.ico') }}'>
+        <link rel='icon' type='image/png' href='{{ asset('favicon-32x32.png') }}' sizes='32x32'>
+        <link rel='icon' type='image/png' href='{{ asset('favicon-194x194.png') }}' sizes='194x194'>
+        <link rel='icon' type='image/png' href='{{ asset('favicon-96x96.png') }}' sizes='96x96'>
+        <link rel='icon' type='image/png' href='{{ asset('android-chrome-192x192.png') }}' sizes='192x192'>
+        <link rel='icon' type='image/png' href='{{ asset('favicon-16x16.png') }}' sizes='16x16'>
+        <link rel='manifest' href='{{ asset('manifest.json') }}'>
+        <meta name='msapplication-TileColor' content='#046380'>
+        <meta name='msapplication-TileImage' content='{{ asset('mstile-144x144.png') }}'>
+        <meta name='theme-color' content='#046380'>
+        {% block head_data %}{% endblock %}
+    </head>
+    <body {% block body_attributes %}{% endblock %}>
+        {% block body %}
+            {% block app_header %}{% endblock %}
+            <main id='main'>
+                {% block app_container %}
+                    <div class='container'>
+                        {% block app_content %}{% endblock %}
+                    </div>
+                {% endblock %}
+            </main>
+            {% block app_footer %}{% endblock %}
+        {% endblock %}
+        {% block javascripts %}
+            {% javascripts
+                '@FloschProxyBundle/Resources/public/js/vendor.min.js'
+                '@FloschProxyBundle/Resources/public/js/app.min.js'
+                output='js/app.min.js'
+                %}
+                <script src='{{ asset_url }}'></script>
+            {% endjavascripts %}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+flosch_proxy_login_page:
+    path:  /login
+    defaults:
+        _controller: FloschProxyBundle:Security/Authentication:login
+    methods: [GET]
+
+flosch_proxy_login_check_page:
+    path:  /login_check
+    methods: [POST]
+
+flosch_proxy_logout_page:
+    path:  /logout
+    methods: [GET]
+
+flosch_proxy_request_page:
+    path:     /{uri}
+    defaults:
+        _controller: FloschProxyBundle:Proxy:request
+    requirements:
+        uri: .*
