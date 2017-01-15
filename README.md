@@ -76,10 +76,8 @@ security:
     encoders:
         # The FloschProxyBundle User model class, you can choose your favorite encoder
         Flosch\Bundle\ProxyBundle\Model\User:
-            algorithm:            pbkdf2
-            hash_algorithm:       sha512
-            iterations:           1000000
-            encode_as_base64:     true
+            algorithm:            bcrypt
+            cost: 17
 
     providers:
         # [...]
